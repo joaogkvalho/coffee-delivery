@@ -1,6 +1,6 @@
 import { MapPin, ShoppingCart } from '@phosphor-icons/react'
-import logoImg from '../../assets/Logo.png'
 import { Link } from 'react-router-dom'
+import logoImg from '../../assets/Logo.png'
 
 export function Header() {
     return (

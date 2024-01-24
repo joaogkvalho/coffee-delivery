@@ -1,4 +1,5 @@
 import { Minus, Plus, Trash } from '@phosphor-icons/react'
+import { Link } from 'react-router-dom'
 import productImg from '../../assets/Americano.png'
 
 export function SelectedProducts() {
@@ -88,14 +89,14 @@ export function SelectedProducts() {
                         </div>
                     </div>
 
-                    <button 
+                    <Link 
+                        to="/order-finished"  
                         className="
                             w-full mt-6 text-white py-3 bg-yellow hover:bg-yellow-dark 
-                            transition-all rounded-md uppercase text-[14px] font-semibold
-                        "
-                    >
-                        Confirmar pedido
-                    </button>
+                            transition-all rounded-md text-center
+                        ">
+                        <button className="uppercase text-[14px] font-semibold">Confirmar pedido</button>
+                    </Link>
                 </div>
             </div>
         </div>
